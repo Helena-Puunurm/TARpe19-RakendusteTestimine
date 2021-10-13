@@ -19,9 +19,11 @@ class FizzBuzzTests {
 	@Test
 	void shouldReturnNumbersOneToHundred() {
 		FizzBuzz fb = new FizzBuzz();
-		assertEquals(100, fb.getNumbers());
+		assertEquals(100, fb.getNumbers().length);
 	}
 	
-
+	/*@Test
+	void shouldReturn
+	*/
 
 }
