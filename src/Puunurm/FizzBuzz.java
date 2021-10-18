@@ -3,14 +3,14 @@ package Puunurm;
 import java.util.Arrays;
 
 public class FizzBuzz {
-	/*private int[] numbers;
-	public String[] getNumbers() {
+	private int[] numbers;
+	public int[] getNumbers() {
 		numbers = new int[100];
 		for (int i = 0; i < numbers.length; i++) {
 			numbers[i]=i+1;
 		}
-		
-		return (String[]) Arrays.stream(numbers)
+		return numbers;
+	/*	return (String[]) Arrays.stream(numbers)
 				.mapToObj(this::getFizzBuzz)
 				.toArray(String[]::new);
 				}
@@ -22,8 +22,8 @@ public class FizzBuzz {
 				return "Buzz";
 				if (number%3==0)
 				return "Fizz";
-				return String.valueOf(number);
+				return String.valueOf(number);*/
 			}
 	
-	*/
+	
 }
