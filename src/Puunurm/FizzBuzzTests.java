@@ -2,14 +2,23 @@ package Puunurm;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.stream.IntStream;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class FizzBuzzTests {
-
+	private FizzBuzz fb;
+	private String[] expected1_100;
+	
 	@BeforeEach
 	void setUp() throws Exception {
+		fb = new FizzBuzz();
+	expected1_100 = (String[])IntStream
+	.range(1, 101)
+	.mapToObj(String::valueOf)
+	.toArray(String[]::new);
 	}
 
 	@AfterEach
@@ -17,13 +26,53 @@ class FizzBuzzTests {
 	}
 
 	@Test
-	void shouldReturnNumbersOneToHundred() {
-		FizzBuzz fb = new FizzBuzz();
-		assertEquals(100, fb.getNumbers().length);
+	void shouldReturnOneHundredNumbers() {
+	assertEquals(100, fb.getNumbers().length);
 	}
 	
-	/*@Test
-	void shouldReturn
-	*/
 
+	/*
+	@Test
+	void shouldReturnFizzForNumbersDividibleBy5() {
+		final String[] actual = fb.getNumbers();
+	for (int i = 0; i < expected1_100.length; i++) {
+	if(Integer.valueOf(expected1_100[i]) % 5 == 0 &&
+	Integer.valueOf(expected1_100[i]) % 3 != 0) {
+		assertEquals("Buzz", actual[i]);
+	}
+	}
 }
+	
+	@Test
+	void shouldReturnFizzForNumbersDividibleBy5or3() {
+		final String[] actual = fb.getNumbers();
+	for (int i = 0; i < expected1_100.length; i++) {
+		if(Integer.valueOf(expected1_100[i]) % 5 == 0 &&
+		Integer.valueOf(expected1_100[i]) % 3 == 0) {
+			assertEquals("FizzBuzz", actual[i]);
+		}
+		
+		}
+	}
+	*/
+	
+}
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
