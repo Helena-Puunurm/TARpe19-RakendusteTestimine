@@ -1,10 +1,10 @@
 package Puunurm;
 
-public class GameOfLife {
+public class Cell {
 
-	public Cell createCell(CellState states) {
+	public Object getState() {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
+
 }
