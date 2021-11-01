@@ -17,7 +17,9 @@ public class IpValidator {
 	}
 
 	public int[] getNumbers(String string) {
-		// TODO Auto-generated method stub
-		return null;
+		return Arrays
+				.stream(string.split("\\."))
+				.mapToInt(Integer::parseInt)
+				.toArray();
 	}
 }
