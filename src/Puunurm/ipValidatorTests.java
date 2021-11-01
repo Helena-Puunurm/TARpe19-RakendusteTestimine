@@ -24,5 +24,9 @@ class ipValidatorTests {
 		assertFalse(validator.ValidateIpv4Address(""));
 	}
 
-
+	@Test
+	void shouldBe_True_GivenStringWithThreeDots() {
+	assertTrue(validator.ValidateIpv4Address("1.2.3.1"));
+	}
+	
 }

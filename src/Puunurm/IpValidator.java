@@ -8,6 +8,6 @@ public class IpValidator {
 		if(ipString=="") {
 			return false;
 		}
-		return true;
+		return false;
 	}
 }
